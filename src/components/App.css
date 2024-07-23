@@ -1,0 +1,140 @@
+
+
+.nui-wrapper {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* Prevents text selection while dragging */
+
+}
+
+.taskbar-tab {
+  background-color: #bfbfbf;
+  border: 2.5px solid #d4d0c8; /* Light gray */
+  border-top-color: #ffffff;  /* White for top border */
+  border-left-color: #ffffff; /* White for left border */
+  border-right-color: #070707; /* Dark gray for right border */
+  border-bottom-color: #070707; /* Dark gray for bottom border */
+}
+.taskbar-tab.active {
+  background-color: #dedddc;
+  border: 2.5px solid #d4d0c8; /* Light gray */
+  border-top-color: #070707;  /* White for top border */
+  border-left-color: #070707; /* White for left border */
+  border-right-color: #ffffff; /* Dark gray for right border */
+  border-bottom-color: #ffffff; /* Dark gray for bottom border */
+}
+
+.win95-scrollarea{
+  border: 1.5px solid #d4d0c8; /* Light gray */
+  border-top-color: #070707;  /* White for top border */
+  border-left-color: #070707; /* White for left border */
+  border-right-color: #ffffff; /* Dark gray for right border */
+  border-bottom-color: #ffffff; /* Dark gray for bottom border */
+}
+.win95-border {
+  background-color: #bfbfbf;
+  border: 2.5px solid #d4d0c8; /* Light gray */
+  border-top-color: #ffffff;  /* White for top border */
+  border-left-color: #ffffff; /* White for left border */
+  border-right-color: #070707; /* Dark gray for right border */
+  border-bottom-color: #070707; /* Dark gray for bottom border */
+}
+.win95-border-top {
+  background-color: #bfbfbf;
+  border-top: 4px solid #d4d0c8; /* Light gray */
+  border-top-color: #ffffff;  /* White for top border */
+  box-shadow: inset 1px 1px #958d8c, inset -1px -1px #ffffff;
+}
+
+.win95-button:active {
+  border-top-color: #070707; /* Darker color on active (pressed) state */
+  border-left-color: #070707;
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.win95-button:hover {
+  box-shadow: inset 2px 2px #958d8c, inset -2px -2px #ffffff;
+  color: white;
+}
+
+.win95-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  color:white;
+}
+
+.drag-handle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto; /* Ensure drag handle can interact with mouse events */
+}
+
+.win95-icon img {
+  width: 98px;
+  height: 98px;
+  margin-bottom: -3vh;
+}
+
+.win95-icon span {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 5px;
+  border: 2px solid transparent;
+}
+.win95-icon span:hover {
+  border-color: black;
+  background-color: #c0c0c0;
+  color: black;
+}
+
+.win95-icon span:active {
+  border-color: black;
+  background-color: #808080;
+  color: white;
+}
+
+.win95-inset {
+  background-color: #c0c0c0; /* Background color */
+  box-shadow: inset 0.2vh 0.2vh 0 0 #958d8c, /* Inner shadow for bottom and right */
+              inset -0.2vh -0.2vh 0 0 #ffffff; /* Inner shadow for top and left */
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.computerbackground {
+  background: #008081;
+  aspect-ratio: 4/3;
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+  object-fit: cover;
+  display: flex;
+  color: white;
+  font-size: 16px;
+  font-family: 'Levi Windows';
+  color: black;
+}
+
+.bottomBar{
+  background: #bfbfbf;
+  width:100%;
+  margin-top:auto;
+  display:'flex'; 
+  flex-direction:'row';
+  align-items: 'center';
+  justify-content: space-between;
+}

@@ -1,0 +1,78 @@
+.application-window {
+    position: absolute;
+    background-color: #bfbfbf;
+    padding:3px;
+    z-index: 1000;
+  }
+  .application-window.active {
+    z-index: 2000;
+  }
+  .application-window.hidden {
+    display:none;
+  }
+  .application-window-outline{
+    position: absolute;
+    border: 2px dashed #808080;
+    pointer-events: none;
+    z-index: 3000;
+  }
+  .window-title-bar.active{
+    background-color: #000080;
+  }
+  .window-title-bar {
+    background-color: #808080;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: 'center';
+    max-height: 3.8vh;
+  }
+ 
+  .window-title {
+    font-weight: bold;
+    color:white;
+    font-size: 15px;
+  }
+  
+  .window-content {
+    margin-top: 15px;
+    margin-bottom: 9px;
+    overflow: scroll;
+    height: calc(100% - 30px - 9px); /* Adjust based on title bar height */
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+  .window-content::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+  }
+  
+  .window-content::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    /*border: 2px solid #c0c0c0;*/
+    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #000000;
+  }
+  
+  .window-content::-webkit-scrollbar-track {
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: #dedddc;
+    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #000000;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    width: 17.5px;
+    height: 17.5px;
+    background-color: #958d8c;
+    cursor: nwse-resize; /* Cursor style for resizing */
+    margin-bottom: 2.2px;
+    margin-right: 3px;
+  }
+  
+  .resize-handle.bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
